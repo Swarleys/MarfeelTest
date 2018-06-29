@@ -1,0 +1,102 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-size: 62.5%; }
+
+body {
+  background-color: #eeeded; }
+
+main {
+  background-color: #fff;
+  width: 41rem;
+  margin: 6rem auto;
+  padding: 2.4rem;
+  border-radius: 1.5rem;
+  box-shadow: 1rem 1rem 3rem 0 #a1a1a1; }
+
+.searchContainer {
+  margin: auto;
+  text-align: center; }
+  .searchContainer input {
+    padding: 1rem 1rem;
+    width: 24rem;
+    border-radius: 3px;
+    border: 1px solid lightgray; }
+  .searchContainer button {
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 1rem 2.1rem;
+    margin: 0 0 0 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid lightgray;
+    background-color: #f8f8f8; }
+    .searchContainer button:active, .searchContainer button:focus {
+      outline: none; }
+  .searchContainer button:hover {
+    background-color: #ececec; }
+
+.profile {
+  transition: margin-top 0.3s ease-out;
+  margin: 1.2rem 1rem 2.4rem; }
+  .profile .picture {
+    width: 7.2rem;
+    height: 7.2rem;
+    float: left;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    border-radius: 3px; }
+  .profile .login {
+    font-size: 1.3rem;
+    font-style: italic;
+    margin-bottom: .5rem;
+    color: #646464; }
+  .profile .name {
+    font-weight: bold;
+    font-size: 2.8rem;
+    margin-bottom: .5rem; }
+  .profile .bio {
+    font-size: 1.3rem;
+    margin-bottom: .5rem;
+    color: #646464; }
+
+#repos {
+  margin: 1rem;
+  transition: margin-top 0.3s ease-out; }
+  #repos .list {
+    list-style: none; }
+    #repos .list .repositories {
+      width: 33.5rem;
+      font-size: 1.8rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 2px solid #797979; }
+    #repos .list .border-bottom {
+      width: 33.5rem;
+      border-bottom: 1px solid #d8d8d8;
+      display: inline-block;
+      padding: 1.35rem 1.5rem; }
+    #repos .list .left {
+      font-size: 1.6rem;
+      font-weight: 700;
+      float: left; }
+    #repos .list .right {
+      display: flex;
+      font-size: 1.3rem;
+      font-weight: lighter;
+      float: right; }
+
+#flash-error .error {
+  transition: margin-top 0.3s ease-out;
+  margin: 1rem 1rem;
+  padding: 1.8rem 1.5rem;
+  background-color: #ffdbdb;
+  border-radius: 3px;
+  border: 1px solid #d1a4a4;
+  color: #9e4545;
+  font-size: 1.6rem; }

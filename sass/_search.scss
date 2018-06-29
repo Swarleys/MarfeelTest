@@ -1,0 +1,30 @@
+.searchContainer {
+  margin: auto;
+  text-align: center;
+
+  input {
+    padding: 1rem 1rem;
+    width: 24rem;
+    border-radius: 3px;
+    border: 1px solid $search-border-color;
+  }
+
+  button {
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 1rem 2.1rem;
+    margin: 0 0 0 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid $search-border-color;
+    background-color: $button-bg;
+
+    &:active,
+    &:focus {
+      outline: none;
+    }
+  }
+
+  button:hover {
+    background-color: $button-bg-hover;
+  }
+}

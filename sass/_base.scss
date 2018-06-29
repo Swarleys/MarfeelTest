@@ -1,0 +1,41 @@
+$search-container-width: 41rem;
+$body-bg-color: #eeeded;
+$main-bg-color: #fff;
+$font-bio-login: rgb(100, 100, 100);
+$shadow: rgb(161, 161, 161);
+$search-border-color: rgb(211, 211, 211);
+$button-bg: rgb(248, 248, 248);
+$button-bg-hover: rgb(236, 236, 236);
+$repos-width: 33.5rem;
+$repositories-h2-bottom: rgb(121, 121, 121);
+$repositories-li-bottom: rgb(216, 216, 216);
+$error-bg: rgb(255, 219, 219);
+$error-border: rgb(209, 164, 164);
+$error-font-color: rgb(158, 69, 69);
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-size: 62.5%; //10px 1rem
+}
+
+body {
+  background-color: $body-bg-color;
+}
+
+main {
+  background-color: $main-bg-color;
+  width: $search-container-width;
+  margin: 6rem auto;
+  padding: 2.4rem;
+  border-radius: 1.5rem;
+  box-shadow: 1rem 1rem 3rem 0 $shadow;
+}

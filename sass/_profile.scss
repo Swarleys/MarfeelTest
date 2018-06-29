@@ -1,0 +1,32 @@
+.profile {
+  @include animation();
+  margin: 1.2rem 1rem 2.4rem;
+
+  .picture {
+    width: 7.2rem;
+    height: 7.2rem;
+    float: left;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    border-radius: 3px;
+  }
+
+  .login {
+    font-size: 1.3rem;
+    font-style: italic;
+    margin-bottom: .5rem;
+    color: $font-bio-login;
+  }
+
+  .name {
+    font-weight: bold;
+    font-size: 2.8rem;
+    margin-bottom: .5rem;
+  }
+
+  .bio {
+    font-size: 1.3rem;
+    margin-bottom: .5rem;
+    color: $font-bio-login;
+  }
+}

@@ -1,0 +1,15 @@
+#flash-error {
+
+  .error {
+    @include animation();
+    margin: 1rem 1rem;
+    padding: 1.8rem 1.5rem;
+
+    background-color: $error-bg;
+    border-radius: 3px;
+    border: 1px solid $error-border ;
+
+    color: $error-font-color;
+    font-size: 1.6rem;
+  }
+}

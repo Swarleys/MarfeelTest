@@ -1,0 +1,34 @@
+#repos {
+  margin: 1rem;
+  @include animation();
+
+  .list {
+    list-style: none;
+
+    .repositories {
+      width: $repos-width;
+      font-size: 1.8rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 2px solid $repositories-h2-bottom;
+    }
+
+    .border-bottom {
+      width: $repos-width;
+      border-bottom: 1px solid $repositories-li-bottom;
+      display: inline-block;
+      padding: 1.35rem 1.5rem;
+    }
+    .left {
+      font-size: 1.6rem;
+      font-weight: 700;
+      float: left;
+    }
+
+    .right {
+      display: flex;
+      font-size: 1.3rem;
+      font-weight: lighter;
+      float: right;
+    }
+  }
+}
