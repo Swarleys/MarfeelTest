@@ -3,23 +3,28 @@ class UI {
     this.profile = document.querySelector("#profile");
   }
 
-  showProfile(profile) {
+  showProfile({ avatar_url, name, login, bio }) {
     this.profile.classList.add("profile");
 
     this.clearProfile();
     this.profile.innerHTML = `
-      <img class="picture" src="${profile.avatar_url}" alt="${profile.name}">
-      <p class="login">@${profile.login}</p>
-      <h1 class="name">${profile.name || "No name"}</h1>
-      <p class="bio">${profile.bio || "this is the bio..."}</p>
+      <img class="picture" src="${avatar_url}" alt="${name}">
+      <p class="login">@${login}</p>
+      <h1 class="name">${name || 'No name'}</h1>
+      <p class="bio">${bio || 'This is the bio...'}</p>
     `;
   }
 
   showRepos(repos) {
-    let output = "";
+    document.querySelector('.list').innerHTML = `
+    <h2 class="repositories">Repositories</h2>
+    ${this.renderRepos(repos)}
+    `;
+  }
 
-    repos.forEach(repo => {
-      output += `
+  renderRepos(repos) {
+    return repos.map(repo => {
+      return `
       <li class="border-bottom">
         <span class="left">
          <a href=""></a> ${repo.name}
@@ -30,13 +35,7 @@ class UI {
           <img src="icons/fork.svg" alt="forks" class="forks"> &nbsp ${repo.stargazers_count}
         </span>
       </li>
-      `;
-    });
-
-    document.querySelector('.list').innerHTML = `
-    <h2 class="repositories">Repositories</h2>
-    ${output}
-    `;
+      `}).join().replace(/,/g, '');
   }
 
   flashError() {
@@ -53,6 +52,4 @@ class UI {
     document.querySelector('.list').innerHTML = '';
     document.querySelector('#flash-error').innerHTML = '';
   }
-
-
 }

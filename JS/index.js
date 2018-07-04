@@ -8,10 +8,10 @@ button.addEventListener("click", (e) => {
   e.preventDefault();
   const user = document.querySelector("#searchUser").value.trim();
 
-  if (user !== "") {
+  if (user) {
     github.getUser(user).then(data => {
       if (data.profile.message === "Not Found") {
-        ui.flashError(); //Falta la interfaz
+        ui.flashError();
       } else {
         ui.showProfile(data.profile);
         ui.showRepos(data.repos);
